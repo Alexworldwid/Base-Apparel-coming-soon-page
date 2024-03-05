@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/43f82acbea.js" crossorigin="anonymous"></script>
+
+  <title>Base Apparel coming soon page</title>
+
+</head>
+<body class="flex flex-col  items-center h-screen md:justify-center">
+  <main class="bg-gradient-to-br from-linear1Color1 to-linear1Color2 flex flex-col justify-center w-96 md:grid grid-cols-2 md:gap-9 auto-rows-[100px] md:w-[800px]">
+     
+    <!-- logo -->
+    <div class="p-8 row-span-1">
+      <img class="w-24 md:text-left" src="images/logo.svg" alt="">
+    </div>
+
+    <!-- hero img -->
+    <div class="m-auto md:row-span-4 md:h-auto">
+      <img class="md:hidden " src="images/hero-mobile.jpg" alt="hero">
+      <img class="hidden md:block" src="images/hero-desktop.jpg" alt="hero-medium screen">
+    </div>
+
+    <!-- intro -->
+    <div class="flex flex-col justify-center items-center mt-16 mb-8 md:items-start md:px-6">
+      <h1 style="letter-spacing: 7px;" class="text-center text-4xl font-medium md:text-left"><span class="text-DesaturatedRed font-light">WE'RE </span> <br>COMING <br> SOON</h1>
+    </div>
+
+    <!-- about -->
+    <div class="px-6 md:flex items-start">
+      <p class="text-DesaturatedRed text-center md:text-left">Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.</p>
+    </div>
+
+    <!-- form -->
+    <form action="" class="">
+      <div class="w-[313px] mx-auto my-4 relative mb-10 md:items-start md:text-left md:ml-6">
+        <input class="w-full px-4 py-2 pb-2.5 rounded-full bg-linear1Color2 border-DesaturatedRed border-2 border-solid focus:border-DesaturatedRed" type="email" name="mail" id="mail" placeholder="Email Address" required><button><img src="images/icon-arrow.svg" alt="arrow"></button><button class="absolute -top-0 left-64 bg-softRed hover:bg-DesaturatedRed w-14 h-11 rounded-full"><i class="fa-thin fa-greater-than fa-bounce text-white text-4xl"></i></button>
+        <i id="error-icon" class=" absolute bottom-11 left-56 fa-solid fa-circle-exclamation text-red-600 invisible"></i>
+        <p id="status" class="hidden absolute bottom-1 ml-4 text-softRed">please provide a valid email</p>
+      </div>
+    </form>
+
+  </main>
+
+  <footer>
+    <p class="text-center">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      <br>Coded by <a href="#">Adewale</a>.
+    </p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
